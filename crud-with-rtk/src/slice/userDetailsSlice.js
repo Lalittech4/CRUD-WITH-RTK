@@ -34,7 +34,7 @@ export const ReadUser = createAsyncThunk(
 
     try {
       const result = await response.json();
-      console.log(result);
+      
       return result;
     } catch (error) {
       return rejectWithValue(error);
@@ -53,7 +53,7 @@ export const DeleteUser = createAsyncThunk(
 
     try {
       const result = await response.json();
-      console.log(result);
+   
       return result;
     } catch (error) {
       return rejectWithValue(error);
