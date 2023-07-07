@@ -17,6 +17,7 @@ const Read = () => {
 
   return (
     <>
+    
       {showpopup && <Modal id={id} setshowpopup={setshowpopup} />}
         <p className="w-50 mx-auto d-flex justify-content-center mt-2 ">
           ALL POSTS
@@ -84,6 +85,7 @@ const Read = () => {
                         className="card-link text-decoration-none text-primary"
                         onClick={() => [setid(item.id), setshowpopup(true)]}
                       >
+                        {/* added new branch */}
                         View
                       </Link>
                       <Link
